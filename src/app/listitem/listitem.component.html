@@ -1,0 +1,11 @@
+<div class="card mt-5 ml-3">
+    <div class="d-block mt-3 mr-3">
+        <button *ngIf="!favoriteAuthorsIndices.includes(author._id)" class="btn btn-primary btn-sm float-right" (click)="add(author._id)">Add Favt</button>
+        <button *ngIf="favoriteAuthorsIndices.includes(author._id)" class="btn btn-primary btn-sm float-right" (click)="remove(author._id)">Remove Favt</button>
+    </div>
+    <div class="card-body">
+    <h5 class="card-title">{{author.name}}</h5>
+    <p class="card-text">{{author.bio}}</p>
+    <a href="{{author.link}}" target="_blank">{{author.slug}}</a>
+    </div>
+</div>
