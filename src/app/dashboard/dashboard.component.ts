@@ -48,8 +48,6 @@ export class DashboardComponent implements OnInit {
           this.favoriteAuthors.push(element);
         }
       });
-      console.log(this.favoriteAuthors);
-      console.log(this.favoriteAuthorsIndices);
     }
   }
 
@@ -65,8 +63,6 @@ export class DashboardComponent implements OnInit {
       this.favoriteAuthors = this.favoriteAuthors.filter((element: any, index: any) => {
         return (idOfAuthor !== element._id)
       });
-      console.log(this.favoriteAuthors);
-      console.log(this.favoriteAuthorsIndices);
     }
   }
 
